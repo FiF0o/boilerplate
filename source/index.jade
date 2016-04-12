@@ -13,9 +13,9 @@ head
   //link(rel="stylesheet", href="assets/css/main.min.css")
 
 body
-  header
+  header(role="banner")
   div.header
-      nav
+      nav(role="navigation")
         div.logo
 
           svg#Layer_1(data-name='Layer 1', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 87 87')
@@ -31,8 +31,8 @@ body
           ul.nav-list
             li.nav-elements
               a(rel="something", href="page2.html").link-nav text here
-              a(rel="page2.html", href="#").link-nav text here
-              a(rel="something", href="#").link-nav text here
+              a(rel="page2.html", href="#section-2").link-nav section-2
+              a(rel="something", href="#section-3").link-nav section-3
 
   // image credit: Nearsoft Inc @flickr - UX Clinic - Affinity Diagram Session
   div.hero-image
@@ -76,6 +76,12 @@ body
     i
       .icon-ic_accessibility_black_24px
     i.icon-ic_accessible_black_24px
+
+  section(id="section-2")
+
+    | Section 2 here
+  section(id="section-3")
+    | Section 3 here
 
   footer
     ul.secondary-list
