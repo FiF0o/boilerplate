@@ -260,13 +260,13 @@ gulp.task('image', function () {
           }],
 
         // Resize all PNG images to be retina ready
-        '*.png': [{
-          width: 320
-        },
-          {
-          width: 320 * 2,
-          rename: { suffix: '@2x' }
-        }]
+        //'*.png': [{
+        //  width: 320
+        //},
+        //  {
+        //  width: 320 * 2,
+        //  rename: { suffix: '@2x' }
+        //}]
       },
         {
       // Global configuration for all images

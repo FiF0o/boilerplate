@@ -44,8 +44,11 @@
   @if $filename == ic_g_translate_black_24px {
   $char: "\E001";
 }
-  @if $filename == twitter {
+  @if $filename == logo {
   $char: "\E002";
+}
+  @if $filename == twitter {
+  $char: "\E003";
 }
 
 @return $char;
@@ -64,6 +67,9 @@
 
 .icon-ic_g_translate_black_24px {
   @include icon(ic_g_translate_black_24px);
+}
+.icon-logo {
+  @include icon(logo);
 }
 .icon-twitter {
   @include icon(twitter);
