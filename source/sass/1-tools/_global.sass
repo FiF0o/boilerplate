@@ -1,0 +1,35 @@
+// Global Sass config and parameters here
+@import 'compass'
+@import 'vars'
+
+/* apply a natural box layout model to all elements, but allowing 5-custom to change */
+// Paul Irish hack
+html
+  box-sizing: border-box
+
+*
+  //&:before, &:after
+  &:before, &:after
+  box-sizing: inherit
+
+// default style for RWD images
+img, video
+  max-width: 100%
+  height: auto
+
+// ********** Selection/Highlight ********** //
+
+::selection
+  background: lighten($primary-mono2, 10%)
+
+::-moz-selection
+  background: lighten($primary-mono2, 10%)
+
+img::selection
+  background: transparent
+
+img::-moz-selection
+  background: transparent
+
+body
+  -webkit-tap-highlight-color: lighten($primary-mono2, 10%)
