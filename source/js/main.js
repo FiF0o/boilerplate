@@ -1,49 +1,37 @@
+// -- first syntax ES6-- //
 //import $ from '../vendors/jquery/dist/jquery.js';
-// -- second syntax -- //
-//var $ = require('../../vendors/jquery/dist/jquery');
 
-// * Debug * //
-//console.log($);
+// -- second syntax Commonjs-- //
+//var $ = require('../../vendors/jquery/dist/jquery');
 
 //import kikou from './test';
 //kikou();
-// -- second syntax -- //
-//var kikou = require('./test');
 
-// * Debug * //
-//console.log(kikou);
-
-//import TaMere from './scrollSpy';
-////console.log('log TaMere import: \n\n' + TaMere + '\n\n');
-////
+//import TaMere from './test/testModule';
+//console.log('log TaMere import: \n\n' + TaMere + '\n\n');
+//
+//
 //var taMere2 = new TaMere('yo','yo');
-// * Debug * //
+//
+//// * Debug * //
 //console.log(taMere2);
 //console.log('log TaMere.taMere \n\n' + TaMere.taMere);
 
 
+// ***************** Scroll Nav Plugin *****************
 import scrollSpy from './scrollSpy';
 // * Debug * //
-
-//console.log(scrollSpy.taMere);
+//console.log(scrollSpy);
 //var controller = new ScrollMagic.Controller();
-console.log('scrollSpy: \n\n' + scrollSpy + '\n\n');
-console.log('scrollSpy.controller: \n\n' + scrollSpy.controller + '\n\n');
 
 
-
-
-
+// ***************** RWD Nav Plugin *****************
 
 import Nav from './nav';
 console.log('Nav:' + Nav);
 
-//// * Debug * //
-//$(function() {
-//    console.log('tams jquery');
-//}());
-//
-//// * Debug * //
+
+//// * Debug ES6 Test * //
 //const test = 5;
 //console.log(test);
 //
