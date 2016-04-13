@@ -1,6 +1,6 @@
 div.hero-image
-  background-image: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907)
-  //background-image: url("../img/uxbackground-960px.jpg")
+  //background-image: url(https://unsplash.imgix.net/photo-1414490929659-9a12b7e31907)
+  background-image: url("../../assets/img/uxbackground-original.jpg")
 
   // gives 100% height to the background image
   height: 100vh
@@ -12,11 +12,11 @@ div.hero-image
   flex-direction: column
   justify-content: center
   align-items: center
-  //@media screen and (max-width: $l-screen)
-  //  background-image: url("../")
-  //@media screen and (max-width: $m-screen)
-  //  background-image: url("../")
-  //@media screen and (max-width: $s-screen)
-  //  background-image: url("../")
-  //@media screen and (max-width: $xs-screen)
-  //  background-image: url("../")
+  @media screen and (max-width: $l-screen)
+    background-image: url("../../assets/img/uxbackground-960px.jpg")
+  @media screen and (max-width: $m-screen)
+    background-image: url("../../assets/img/uxbackground-768px.jpg")
+  @media screen and (max-width: $s-screen)
+    background-image: url("../../assets/img/uxbackground-480px.jpg")
+  @media screen and (max-width: $xs-screen)
+    background-image: url("../../assets/img/uxbackground-320px.jpg")
