@@ -7,12 +7,23 @@ footer
   p
     margin-top: calc-em(40px, 1024px)
 
+  .secondary-section
+    font-size: calc-em(12px, 15px)
+    > a
+      font-size: calc-em(12px, 15px)
+      border: 0px solid
+      transition: none
 
 .footer-link
   display: inline-block
   //TODO Change color to be the same as text
+  //&:hover, &:focus
+  //  background-color: $complimentary2
   .i
-    color: red
+    //font-size: calc-em(18px, 14px)
+    color: $complimentary1
+    //span &
+    //  font-size: 30px
 
   @media screen and (max-width: $s-screen)
     display: block

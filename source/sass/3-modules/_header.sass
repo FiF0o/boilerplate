@@ -10,6 +10,7 @@ div.logo
   display: block
   //background-image: url(http://placehold.it/88x88)
   background: url('../../assets/img/icons/logo.svg') no-repeat
+  //TODO background-image property for svg icon - fallback
   float: left
   text-indent: -9999px
   //+hide-text(right)
@@ -72,12 +73,22 @@ li.nav-elements
     &:last-child
       border-bottom: none
 
-.icon-menu
-  font-size: 36px
-  margin: 0 auto
-  text-align: center
-  vertical-align: middle
-  display: table-cell
+
+div
+  .icon-menu
+    font-size: 36px
+    margin: 0 auto
+    text-align: center
+    vertical-align: middle
+    display: table-cell
+    div &
+      color: $complimentary1
+    .font-icon-default
+
+    &:hover
+      //background-color: $primary-mono2
+      color: $complimentary2
+      font-size: 44px
 
 //button for RWD view
 .nav-mobile
