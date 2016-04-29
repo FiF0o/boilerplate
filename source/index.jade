@@ -1,191 +1,233 @@
 doctype html
 html(lang="en")
 head
-  title Title
-  meta(charset="UTF-8")
-  //- IE compatibality mode
-  meta(http-equiv="X-UA-Compatible", content="IE=Edge")
-  meta(http-equiv="Content-Type", content="text/html", charset="UTF-8")
-  //meta()
-  meta(name="viewport", content="width=device-width, initial-scale=1")
-  //link(rel="shortcut icon", href="./assets/img/favicons/favicon.ico")
-  link(rel="stylesheet", href="assets/css/main.css")
-  //// production version
-  //link(rel="stylesheet", href="assets/css/main.min.css")
+    title Title
+    meta(charset="UTF-8")
+    //- IE compatibality mode
+    meta(http-equiv="X-UA-Compatible", content="IE=Edge")
+    meta(http-equiv="Content-Type", content="text/html", charset="UTF-8")
+    //meta()
+    meta(name="viewport", content="width=device-width, initial-scale=1")
+    link(rel="shortcut icon", href="./favicon.ico")
+    link(rel="stylesheet", href="assets/css/main.css")
+    //// production version
+    //link(rel="stylesheet", href="assets/css/main.min.css")
+
 
 body
-  header(role="banner")
-  div.header
-      nav(role="navigation")
-        div.logo
-          svg#Layer_1(data-name='Layer 1', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 87 87')
-            title logo_jl
-            path(d='M26.24351,34.39549c-11.73618,7.10172-7.45181-7.30179-7.45181-7.30179l15.00364,0c18.40446,0,9.40228,33.30808,0,33.30808-23.20563,0-23.40567-14.27013.1-14.27013C52.49988,46.13167,49.99927,19.892,53,19.892S34.39549,60.4018,53,60.4018H71.60451', transform='translate(-0.46655 0.07423)', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px')
-            circle(cx='43.5', cy='43.5', r='42.5', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px')
-        .nav-mobile
-          .icon-menu.font-icon-default
-        .nav
-          ul.nav-list
-            li.nav-elements
-              //a(rel="something", href="page2.html").link-nav text here
-              a(rel="something", href="#section-1").link-nav Home
-              a(rel="something", href="#section-2").link-nav About
-              a(rel="page2.html", href="#section-3").link-nav Work
-              a(rel="something", href="#section-4").link-nav Contact
 
-  // image credit: Nearsoft Inc @flickr - UX Clinic - Affinity Diagram Session
-  div.hero-image(id="section-1")
-    h1 I am a User Experience Designer
-    h2 I create human friendly services
-    p.leading-section
-      | lorem ipsum
+    //Link report card: https://www.codeschool.com/users/1860389
 
-  section(id="section-2")
-    h2 About
-    h3 I am a h3 title
-    p.leading-section.
-      Here is a little bit about me, service design and user experience. For more information about me, you can have a look at my
-    a(href='https://uk.linkedin.com/pub/jonathan-lazarini/1b/a45/3b4') Linkedin
+    //Certificant ID: 433659
+    // scrum alliance: https://www.scrumalliance.org/community/profile/jlazarini
 
-    //article an article as a div
-  //section
-    //a(href="", class="button-primary") button name
-    h1 h1 title here
-    h2 a h2 here
-    p lorem
-    article an article as a div
+    // UXPA: https://uxpa.org/users/jonlazarini
 
-  .vertical-grid(id="section-3")
-    // *** BGC *** //
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/BGC-original.jpg"
-        srcset="assets/img/BGC-320px.jpg 320w, assets/img/BGC-480px.jpg 480w, assets/img/BGC-768px.jpg 768w, assets/img/BGC-960px.jpg 960w, assets/img/BGC-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Belgacom Omnichannel experience.")
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
+    // soundcloud: https://soundcloud.com/jonathan-lazarini
+    // RA: https://www.residentadvisor.net/profile/jonlazarini
+    //insta: https://www.instagram.com/fif0o/
+    //github: https://github.com/FiF0o
+    // stackoverflow: http://stackoverflow.com/users/4952586/jon-lazarini
+    // Movember: http://mobro.co/jonlazarini
+    //Eco volunteering: http://www.tcv.org.uk/volunteering
 
-    // *** RSA *** //
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/RLink2-original.jpg"
-        srcset="assets/img/RLink2-320px.jpg 320w, assets/img/RLink2-480px.jpg 480w, assets/img/RLink2-768px.jpg 768w, assets/img/RLink2-960px.jpg 960w, assets/img/RLink2-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RLink 2.")
+    header(role="banner")
+    div.header
+        nav(role="navigation")
+            div.logo
+                svg#Layer_1(data-name='Layer 1', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 87 87')
+                    title logo_jl
+                    path(d='M26.24351,34.39549c-11.73618,7.10172-7.45181-7.30179-7.45181-7.30179l15.00364,0c18.40446,0,9.40228,33.30808,0,33.30808-23.20563,0-23.40567-14.27013.1-14.27013C52.49988,46.13167,49.99927,19.892,53,19.892S34.39549,60.4018,53,60.4018H71.60451', transform='translate(-0.46655 0.07423)', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px')
+                    circle(cx='43.5', cy='43.5', r='42.5', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px')
+            .nav-mobile
+                .icon-menu.font-icon-default
+            .nav
+                ul.nav-list
+                    li.nav-elements
+                        //a(rel="something", href="page2.html").link-nav text here
+                        a(rel="something", href="#section-1").link-nav Home
+                        a(rel="something", href="#section-2").link-nav About
+                        a(rel="page2.html", href="#section-3").link-nav Work
+                        a(rel="something", href="#section-4").link-nav Contact
 
-    // *** BP *** //
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/BP-original.jpg"
-        srcset="assets/img/BP-320px.jpg 320w, assets/img/BP-480px.jpg 480w, assets/img/BP-768px.jpg 768w, assets/img/BP-960px.jpg 960w, assets/img/BP-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="BP Android app.")
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
+    // image credit: Nearsoft Inc @flickr - UX Clinic - Affinity Diagram Session
+    div.hero-image(id="section-1")
+        h1 I am a User Experience Designer
+        h2 I create human friendly services
+        p.leading-section
+            | lorem ipsum
 
-    // *** BTviewerapp *** //
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/BTviewerapp-original.jpg"
-        srcset="assets/img/BTviewerapp-320px.jpg 320w, assets/img/BTviewerapp-480px.jpg 480w, assets/img/BTviewerapp-768px.jpg 768w, assets/img/BTviewerapp-960px.jpg 960w, assets/img/BTviewerapp-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="BTviewerapp.")
+    section(id="section-2")
+        h2 About
+        .separator.dotted-gradient.small
+
+        h3 UX
+        p.leading-section.
+            Here is a little bit about me, service design and user experience. For more information about me, you can have a look at my
+        a(href='https://uk.linkedin.com/pub/jonathan-lazarini/1b/a45/3b4') Linkedin
+
+        .separator.dotted-gradient
+
+        h3 Process
+        p.leading-section.
+            UX
+            Delivery and Agile
+
+        .separator.dotted-gradient
+
+        h3 The rest
+        p.leading-section.
+            Codeschool, github, UXPA, Scrum Alliance
+
+        .separator.dotted-gradient
+
+        h3 Extra
+        p.leading-section.
+            music, causes i care about, music, pics insta
 
 
-    // *** cutecircuit *** //
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/cutecircuit-original.jpg"
-        srcset="assets/img/cutecircuit-320px.jpg 320w, assets/img/cutecircuit-480px.jpg 480w, assets/img/cutecircuit-768px.jpg 768w, assets/img/cutecircuit-960px.jpg 960w, assets/img/cutecircuit-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Cutecircuit iPad app.")
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
+
+        //article an article as a div
+    //section
+      //a(href="", class="button-primary") button name
+      h1 h1 title here
+      h2 a h2 here
+      p lorem
+      article an article as a div
+
+    h2(id="section-3") Work
+    .vertical-grid
+        // *** BGC *** //
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/BGC-original.jpg"
+                srcset="assets/img/BGC-320px.jpg 320w, assets/img/BGC-480px.jpg 480w, assets/img/BGC-768px.jpg 768w, assets/img/BGC-960px.jpg 960w, assets/img/BGC-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Belgacom Omnichannel experience.")
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+
+        // *** RSA *** //
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/RLink2-original.jpg"
+                srcset="assets/img/RLink2-320px.jpg 320w, assets/img/RLink2-480px.jpg 480w, assets/img/RLink2-768px.jpg 768w, assets/img/RLink2-960px.jpg 960w, assets/img/RLink2-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RLink 2.")
+
+        // *** BP *** //
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/BP-original.jpg"
+                srcset="assets/img/BP-320px.jpg 320w, assets/img/BP-480px.jpg 480w, assets/img/BP-768px.jpg 768w, assets/img/BP-960px.jpg 960w, assets/img/BP-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="BP Android app.")
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+
+        // *** BTviewerapp *** //
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/BTviewerapp-original.jpg"
+                srcset="assets/img/BTviewerapp-320px.jpg 320w, assets/img/BTviewerapp-480px.jpg 480w, assets/img/BTviewerapp-768px.jpg 768w, assets/img/BTviewerapp-960px.jpg 960w, assets/img/BTviewerapp-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="BTviewerapp.")
 
 
-    // *** medicalprofiler *** //
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/medicalprofiler-original.jpg"
-        srcset="assets/img/medicalprofiler-320px.jpg 320w, assets/img/medicalprofiler-480px.jpg 480w, assets/img/medicalprofiler-768px.jpg 768w, assets/img/medicalprofiler-960px.jpg 960w, assets/img/medicalprofiler-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="medicalprofiler.")
+        // *** cutecircuit *** //
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/cutecircuit-original.jpg"
+                srcset="assets/img/cutecircuit-320px.jpg 320w, assets/img/cutecircuit-480px.jpg 480w, assets/img/cutecircuit-768px.jpg 768w, assets/img/cutecircuit-960px.jpg 960w, assets/img/cutecircuit-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Cutecircuit iPad app.")
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
 
-    // *** MHR *** //
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/MHR-original.jpg"
-        srcset="assets/img/MHR-320px.jpg 320w, assets/img/MHR-480px.jpg 480w, assets/img/MHR-768px.jpg 768w, assets/img/MHR-960px.jpg 960w, assets/img/MHR-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="MHR iPad app.")
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
 
-    // *** RBS6Nations2 *** //
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/RBS6Nations2-original.jpg"
-        srcset="assets/img/RBS6Nations2-320px.jpg 320w, assets/img/RBS6Nations2-480px.jpg 480w, assets/img/RBS6Nations2-768px.jpg 768w, assets/img/RBS6Nations2-960px.jpg 960w, assets/img/RBS6Nations2-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RBS6Nations2.")
+        // *** medicalprofiler *** //
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/medicalprofiler-original.jpg"
+                srcset="assets/img/medicalprofiler-320px.jpg 320w, assets/img/medicalprofiler-480px.jpg 480w, assets/img/medicalprofiler-768px.jpg 768w, assets/img/medicalprofiler-960px.jpg 960w, assets/img/medicalprofiler-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="medicalprofiler.")
 
-    // *** RSA *** //
-    .vertical-grid-item-2
-      h3 RSA I am h3 title here
-      p.leading-section.
-        Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-      a(href='#') Link to the vendor
-    .vertical-grid-item-2
-      .image-container
-        img(src="assets/img/RLink2-original.jpg"
-        srcset="assets/img/RLink2-320px.jpg 320w, assets/img/RLink2-480px.jpg 480w, assets/img/RLink2-768px.jpg 768w, assets/img/RLink2-960px.jpg 960w, assets/img/RLink2-original.jpg 1280w",
-        sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RLink 2.")
+        // *** MHR *** //
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/MHR-original.jpg"
+                srcset="assets/img/MHR-320px.jpg 320w, assets/img/MHR-480px.jpg 480w, assets/img/MHR-768px.jpg 768w, assets/img/MHR-960px.jpg 960w, assets/img/MHR-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="MHR iPad app.")
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
 
-  footer(id="section-4")
-    ul.secondary-list
-      li.secondary-items
-        .footer-link
-          span.i.icon-linkedin
-            a(rel="something", href="https://uk.linkedin.com/pub/jonathan-lazarini/1b/a45/3b4").link-nav Linkedin
-          .footer-link
-            span.i.icon-twitter
-              a(rel="something", href="https://twitter.com/fif0o").link-nav Twitter
-          .footer-link
-            span.i.icon-pinterest
-              a(rel="something", href="#").link-nav Pinterest
-          //.footer-link
-          //  span.i.icon-ic_3d_rotation_black_24px
-          //    a(rel="something", href="#").link-nav text here
-    .secondary-section
-      | &copy;2016
-      a(href="#") Link here
-      | All rights reserved.
-  //.horizontal-grid
-  //  .horizontal-grid-item 1 item horizontal
-  //  .horizontal-grid-item 2 item horizontal
-  script(src="./js/app.js")
+        // *** RBS6Nations2 *** //
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/RBS6Nations2-original.jpg"
+                srcset="assets/img/RBS6Nations2-320px.jpg 320w, assets/img/RBS6Nations2-480px.jpg 480w, assets/img/RBS6Nations2-768px.jpg 768w, assets/img/RBS6Nations2-960px.jpg 960w, assets/img/RBS6Nations2-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RBS6Nations2.")
+
+        // *** RSA *** //
+        .vertical-grid-item-2
+            h3 RSA I am h3 title here
+            p.leading-section.
+                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            a(href='#') Link to the vendor
+        .vertical-grid-item-2
+            .image-container
+                img(src="assets/img/RLink2-original.jpg"
+                srcset="assets/img/RLink2-320px.jpg 320w, assets/img/RLink2-480px.jpg 480w, assets/img/RLink2-768px.jpg 768w, assets/img/RLink2-960px.jpg 960w, assets/img/RLink2-original.jpg 1280w",
+                sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="RLink 2.")
+
+    footer
+        h2(id="section-4") Contact
+        ul.secondary-list
+            li.secondary-items
+                .footer-link
+                    span.i.icon-linkedin
+                        a(rel="something", href="https://uk.linkedin.com/pub/jonathan-lazarini/1b/a45/3b4").link-nav Linkedin
+                    .footer-link
+                        span.i.icon-twitter
+                            a(rel="something", href="https://twitter.com/fif0o").link-nav Twitter
+                    .footer-link
+                        span.i.icon-pinterest
+                            a(rel="something", href="#").link-nav Pinterest
+                    //.footer-link
+                    //  span.i.icon-ic_3d_rotation_black_24px
+                    //    a(rel="something", href="#").link-nav text here
+        .secondary-section
+            | &copy;2016
+            a(href="#") Link here
+            | All rights reserved.
+    //.horizontal-grid
+    //  .horizontal-grid-item 1 item horizontal
+    //  .horizontal-grid-item 2 item horizontal
+    script(src="./js/app.js")
