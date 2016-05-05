@@ -39,8 +39,13 @@ div.logo
       text-align: center
       display: none
 
+      // shows nav when on mobile view
     .nav-open &
       display: block
+
+    // hides list nav when click
+    //.nav-click
+    //  display: none
 
       @media screen and (max-width: $s-screen)
         list-style: none
@@ -128,6 +133,7 @@ body
     padding-bottom: 0px
 
 
+// class added in a js
 .main-nav-scrolled
   box-shadow: 0px 1px 2px rgba(0,0,0,0.1)
   position: fixed

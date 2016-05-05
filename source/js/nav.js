@@ -4,11 +4,12 @@
 import $ from '../vendors/jquery/dist/jquery.js';
 
 
-module.exports = function() {
+module.exports = function () {
     //TODO Modularise code snippets for nav
 // ****** RWD MOBILE NAV  ****** //
 
-    $('.nav-mobile').click(function() {
+    $('.nav-mobile').click(function () {
+        //display in block
         $('ul.nav-list').toggleClass('nav-open').slideToggle('slow');
     });
 
@@ -21,23 +22,26 @@ module.exports = function() {
 //       }
 //});
 
-// ****** SHOW MOBILE NAV ELEMENTS WHEN NOT MOBILE VIEW AND IF MOBILE NAV HIDDEN ****** //
+// ****** SHOW MOBILE NAV ELEMENTS WHEN NOT MOBILE VIEW AND IF MOBILE NAV
+// HIDDEN ****** //
 
-    $(window).on('resize', function() {
+    $(window).on('resize', function () {
         if ($(this).width() >= 768) {
-            $('ul.nav-list').css({"display":"inline-block"});
+            $('ul.nav-list').css({"display": "inline-block"});
+            //$('.nav-open').css("display", "none");
 
         }
     });
 
 // ****** HIDES MOBILE NAV WHEN SCROLLING ****** //
-//TODO add animation slide effect when scrolling - manually add a class with animation...
+//TODO add animation slide effect when scrolling - manually add a class with
+// animation...
     var lastScrollTop = 0;
     var dh = $('div.header');
 
-    $(window).scroll(function(event){
+    $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > lastScrollTop && st){
+        if (st > lastScrollTop && st) {
             //console.log('scroll down');
             dh.slideUp(500)
         } else {
@@ -73,21 +77,21 @@ module.exports = function() {
 //    }
 //});
 //    if (window > 768px) {
-//        $('ul.nav-list').css({"display":"inline-block", "margin-left":"20px" });
-//    }
-//});
+//        $('ul.nav-list').css({"display":"inline-block", "margin-left":"20px"
+// }); } });
 
 
 // ****** STICKY NAV NAV  ****** //
 
-    var mn = $(".header")
-        , ml = $('div.logo')
-        , mns = "main-nav-scrolled"
-        , mnls = "main-nav-logo-scrolled"
-        , hdr = $('header').height();
+    var mn = $(".header"), ml = $('div.logo'), // dropshadow when scrolled
+        mns = "main-nav-scrolled", //change logo size
+        mnls = "main-nav-logo-scrolled", hdr = $('header').height();
 
-    $(window).scroll(function() {
-        if( $(this).scrollTop() > hdr ) {
+    $(window).scroll(function () {
+        // hides nav elements when page scroll
+        $('.nav-open').css("display", "none");
+
+        if ($(this).scrollTop() > hdr) {
             //mn.removeClass('nav-down');
             mn.addClass(mns);
             //mn.addClass('nav-up');
@@ -99,15 +103,32 @@ module.exports = function() {
     });
 
 
-    $(window).scroll(function() {
-        if( $(this).scrollTop() > hdr && !mnls ) {
+    $(window).scroll(function () {
+
+        $('.nav-open').css("display", "none");
+
+        if ($(this).scrollTop() > hdr && !mnls) {
             ml.addClass(mnls)
         } else {
             ml.removeClass(mnls)
         }
     });
 
-//TODO Add script that hides nav when scrolled down and shows it back when scrolled up
+    var allNavLinks = $('a.link-nav');
+
+    $(allNavLinks).click(function () {
+        //TODO Refactor code - should only change style on one div and not
+        // 2... Need to tagert the parent div
+        //
+        //hides container nav list when link is clicked
+        $('ul.nav-list').css({"display": "none"});
+
+        //hides nav list when link is clicked
+        $('.nav-open').css("display", "none");
+    });
+
+//TODO Add script that hides nav when scrolled down and shows it back when
+// scrolled up
 
 //var div = $( "<div>" );
 //
