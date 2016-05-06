@@ -28,7 +28,7 @@ import scrollSpy from './scrollSpy';
 // ***************** RWD Nav Plugin *****************
 
 import Nav from './nav';
-console.log('Nav:' + Nav);
+//console.log('Nav:' + Nav);
 
 
 //// * Debug ES6 Test * //
