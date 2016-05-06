@@ -3,7 +3,6 @@
 @import '_vars'
 @import '_functions'
 
-
 //* ************ G R I D ************
 //
 //@lost gutter 60px;
@@ -39,15 +38,13 @@
     //padding: 0px
     @media screen and (max-width: $m-screen)
       lost-column: 1/1
-      //align-items: flex-start
-
-
+//align-items: flex-start
 
 // **** Vertical grid layout **** //
 .vertical-grid
   //TODO Remove lost-utility: edit
   //debug
-  lost-utility: edit
+  //lost-utility: edit
   box-sizing: border-box
 
   //horizontal align items in the grid
@@ -63,10 +60,8 @@
   @media screen and (max-width: $m-screen)
     lost-center: $m-screen
 
-
   .vertical-grid-item-4
     lost-column: 1/4
-
 
     //debug
     //lost-utility: edit
@@ -89,18 +84,14 @@
     @media screen and (max-width: $m-screen)
       lost-column: 1/1
 
-
-
-
-
 // ********** HORIZONTAL GRID SYSTEM FOR TEXT & TYPOGRAPHY ********** //
 // Initialize Rhythm grid system
 +establish-baseline
 
 h1
   +rhythm(2, 2, 2, 2, 66px)
-  //@media screen and (max-width: $m-screen)
-  //  padding: 100px
+//@media screen and (max-width: $m-screen)
+//  padding: 100px
 
 h2
   +rhythm(1, 1, 1, 1, 46px)
@@ -119,7 +110,6 @@ h6
 
 p
   +rhythm(1, 1, 1, 1, 18px)
-
 
 // *** Rhythm ***
 //  +adjust-font-size-to(50px)

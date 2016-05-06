@@ -29,7 +29,7 @@ import scrollSpy from './scrollSpy';
 
 import Nav from './nav';
 //console.log('Nav:' + Nav);
-
+import Homepage from './homepage'
 
 //// * Debug ES6 Test * //
 //const test = 5;
