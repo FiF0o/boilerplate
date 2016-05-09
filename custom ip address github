@@ -1,0 +1,8 @@
+# create CNAME file with domain name
+
+
+# Add to A record in service provider
+192.30.252.153
+192.30.252.154
+
+# create CNAME where index.html has to be

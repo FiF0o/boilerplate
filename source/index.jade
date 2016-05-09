@@ -15,6 +15,17 @@ head
 
 
 body
+    noscript
+        iframe(src='//www.googletagmanager.com/ns.html?id=GTM-MHKV78', height='0', width='0', style='display:none;visibility:hidden')
+    script.
+        (function (w, d, s, l, i) {
+            w[l] = w[l] || [];
+            w[l].push({'gtm.start': new Date().getTime(), event: 'gtm.js'});
+            var f = d.getElementsByTagName(s)[0], j = d.createElement(s), dl = l != 'dataLayer' ? '&l=' + l : '';
+            j.async = true;
+            j.src = '//www.googletagmanager.com/gtm.js?id=' + i + dl;
+            f.parentNode.insertBefore(j, f);
+        })(window, document, 'script', 'dataLayer', 'GTM-MHKV78');
 
     //Link report card: https://www.codeschool.com/users/1860389
 
@@ -74,6 +85,17 @@ body
             Delivery and Agile
 
         .separator
+
+        .test-div shown
+        .test-div hidden
+
+        .test-div-2 shown 2
+        .test-div-2 hidden 2
+        .test-div-2.yoyo hidden 2 yoyo
+
+        .message message default
+        .message.success message success
+        .message.a-class message a-class
 
         h3 The rest
         p.leading-section.

@@ -28,11 +28,13 @@ hr
   background-size: 3px 1px
   background-repeat: repeat-x
 
-//separator for mobile hidden by default
-.mobile
-  display: none
-
+  //separator for mobile hidden by default
+  &.mobile
+    display: none
+    @media screen and (min-width: $xxs-screen) and (max-width: $m-screen)
+      display: block
+    @media screen and (min-width: 961px)
 // revealed when < 768px
-.-is-shown
-  display: block
+//.-is-shown
+//  display: block
 
