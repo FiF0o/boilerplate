@@ -8,11 +8,15 @@ head
     meta(http-equiv="Content-Type", content="text/html", charset="UTF-8")
     //meta()
     meta(name="viewport", content="width=device-width, initial-scale=1")
+    meta(name="keywords", content="")
+    meta(name="description", content="")
+    meta(name="robots", content="")
     link(rel="shortcut icon", href="./favicon.ico")
     link(rel="stylesheet", href="assets/css/main.css")
     //// production version
     //link(rel="stylesheet", href="assets/css/main.min.css")
-
+    // UX, UI, User experience, User Interface, Agile, Scrum, Front-End
+    // HCI, Cognitive sciences, Psychology
 
 body
     noscript
@@ -27,10 +31,6 @@ body
             f.parentNode.insertBefore(j, f);
         })(window, document, 'script', 'dataLayer', 'GTM-MHKV78');
 
-
-
-
-
     // soundcloud: https://soundcloud.com/jonathan-lazarini
     // RA: https://www.residentadvisor.net/profile/jonlazarini
     //insta: https://www.instagram.com/fif0o/
@@ -41,19 +41,20 @@ body
 
     header(role="banner")
     div.header
+        //bug ul.nav-list display none when click link when non mobile view....
         nav(role="navigation")
             div.logo
                 svg#Layer_1(data-name='Layer 1', xmlns='http://www.w3.org/2000/svg', viewbox='0 0 87 87')
                     title logo_jl
                     path(d='M26.24351,34.39549c-11.73618,7.10172-7.45181-7.30179-7.45181-7.30179l15.00364,0c18.40446,0,9.40228,33.30808,0,33.30808-23.20563,0-23.40567-14.27013.1-14.27013C52.49988,46.13167,49.99927,19.892,53,19.892S34.39549,60.4018,53,60.4018H71.60451', transform='translate(-0.46655 0.07423)', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:7px')
                     circle(cx='43.5', cy='43.5', r='42.5', style='fill:none;stroke:#231f20;stroke-linecap:round;stroke-linejoin:round;stroke-width:2px')
-            .nav-mobile
+            .nav-mobile(role="mobile-nav-button")
                 .icon-menu.font-icon-default
-            .nav
+            .nav(role="navigation-menu")
                 ul.nav-list
                     li.nav-elements
                         //a(rel="something", href="page2.html").link-nav text here
-                        a(rel="something", href="#section-1").link-nav Home
+                        a(rel="something", href="#section-1" role="" id="").link-nav Home
                         a(rel="something", href="#section-2").link-nav About
                         a(rel="page2.html", href="#section-3").link-nav Work
                         a(rel="something", href="#section-4").link-nav Contact
@@ -81,6 +82,7 @@ body
             | I like solving <i>real</i> problems, working together from ideation through to production.
             | My preference is to lean on Agile methodologies to help focus on the truly essential — <i>less</i> but better.
             | I am also a fully certified Scrum Master <a href="">Link here</a>&nbsp;and I also love to help companies to achieve their goals
+
             //github: https://github.com/FiF0o
 
             //Link report card: https://www.codeschool.com/users/1860389
@@ -105,34 +107,28 @@ body
 
         h3 The rest
         p.leading-section
-            | As well a my belief for User Experience, you can find me in several conferences [UXPA].
-            | I also specialize in Front-End engineering and do bits of HTML, CSS and Javas when it is needed [Github], and Agile methodologies [Scrum Alliance] .
-            | I  love learning new technologies [code school] and staying up to date
+            | As well a my belief for User Experience, you can find me in several conferences [UXPA].<br>
+            | I also specialize in Front-End engineering and do bits of HTML, CSS and Javascript when it is needed [Github], and Agile methodologies [Scrum Alliance].<br>
+            | I  love learning new technologies [code school] and staying up to date.
 
         .separator
 
         h3 Extra
         p.leading-section
-            | I care about
-            | music, <a href="">Link</a>causes i care about, music, pics insta
+            | I sometimes try to raise funds for organisations [Movember] and care about environment [tcv volunteering].<br>
+            | music, <a href="">Link</a>causes i care about, music, pics insta.<br>
             | You can contact me <a href="">contact</a>
 
         //Eco volunteering: http://www.tcv.org.uk/volunteering
-
         // Movember: http://mobro.co/jonlazarini
 
-        //article an article as a div
-    //section
-      //a(href="", class="button-primary") button name
-      h1 h1 title here
-      h2 a h2 here
-      p lorem
-      article an article as a div
 
     h2(id="section-3") Work
     .small-separator
-    p.leading-section.
-        Intro
+    p.leading-section
+        | Here's a selection of some recent work which is now released and public.<br>
+        |For more up to the minute work you can visit me on [link] and [link].<br>
+    div.separator
     .vertical-grid
         // *** BGC *** //
             http://www.proximus.be/en/id_zwpr_p/personal/products.html
@@ -142,9 +138,11 @@ body
                 srcset="assets/img/BGC-320px.jpg 320w, assets/img/BGC-480px.jpg 480w, assets/img/BGC-768px.jpg 768w, assets/img/BGC-960px.jpg 960w, assets/img/BGC-original.jpg 1280w",
                 sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Belgacom Omnichannel experience.")
         .vertical-grid-item-2
-            h3 RSA I am h3 title here
+            h3 Belgacom omnichannel experience
             p.leading-section
-                | Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
             a(href='#') Link to the vendor
 
         .separator.mobile
@@ -152,8 +150,11 @@ body
         // *** RSA *** //
             https://group.renault.com/en/news/blog-renault/r-link-2-the-personalized-intuitive-connected-multimedia-system/
         .vertical-grid-item-2
-            h3 RSA I am h3 title here
+            h3 R-Link 2
             p.leading-section
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 | Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
         .vertical-grid-item-2
@@ -169,9 +170,12 @@ body
                 srcset="assets/img/BP-320px.jpg 320w, assets/img/BP-480px.jpg 480w, assets/img/BP-768px.jpg 768w, assets/img/BP-960px.jpg 960w, assets/img/BP-original.jpg 1280w",
                 sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="BP Android app.")
         .vertical-grid-item-2
-            h3 RSA I am h3 title here
-            p.leading-section.
-                Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
+            h3 BP Consumer application
+            p.leading-section
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                |    Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
 
         // *** BTviewerapp *** //
@@ -180,8 +184,11 @@ body
 
             .separator.mobile
 
-            h3 RSA I am h3 title here
-            p.leading-section.
+            h3 BT Viewer application
+            p.leading-section
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
         .vertical-grid-item-2
@@ -199,8 +206,11 @@ body
                 srcset="assets/img/cutecircuit-320px.jpg 320w, assets/img/cutecircuit-480px.jpg 480w, assets/img/cutecircuit-768px.jpg 768w, assets/img/cutecircuit-960px.jpg 960w, assets/img/cutecircuit-original.jpg 1280w",
                 sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="Cutecircuit iPad app.")
         .vertical-grid-item-2
-            h3 RSA I am h3 title here
-            p.leading-section.
+            h3 CUTECIRCUIT garment application
+            p.leading-section
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
 
@@ -210,8 +220,11 @@ body
 
             .separator.mobile
 
-            h3 RSA I am h3 title here
+            h3 The Hartford Medical profiler
             p.leading-section.
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
         .vertical-grid-item-2
@@ -229,20 +242,27 @@ body
                 sizes="(max-width: 20em) 30vw, (max-width: 30em) 60vw, (max-width: 40em) 90vw", alt="MHR iPad app.")
         .vertical-grid-item-2
 
-            h3 RSA I am h3 title here
+            h3 MHR iTrent2
             p.leading-section.
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
             a(href='#') Link to the vendor
 
         .separator.mobile
 
         // *** RBS6Nations2 *** //
-
+        //http://unexpected.accenture.com/6nations/
+        //http://unexpected.accenture.com/6nations/chapter2b.php
         .vertical-grid-item-2
-            h3 RSA I am h3 title here
+            h3 RBS6Nations application
             p.leading-section.
+                | <b>Summary:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Problem solved:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
+                | <b>Solution delivred:</b> &nbsp;Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;ds<br><br>
                 Lorem sdjfjsdiojflsdjflksdfjklsdfjlksdfjlksdflsdflsdjfsdjf;dsjfk;dsjfk;sjfk;dsfk;sdfjk;sdjfksdjkfdsjkfjsdfksdkf;sdfdsfsdfsdfsdfsdfdsfjkdsnfjksdfjdsjfdsjfds
-            a(href='#') Link to the vendor
+            a(href='http://unexpected.accenture.com/6nations/' target="_blank" role="presentation" title="Details of RBS6Nations app process") Link to the vendor
         .vertical-grid-item-2
             .image-container
                 img(src="assets/img/RBS6Nations2-original.jpg"

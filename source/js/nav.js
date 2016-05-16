@@ -121,10 +121,16 @@ module.exports = function () {
         // 2... Need to tagert the parent div
         //
         //hides container nav list when link is clicked
-        $('ul.nav-list').css({"display": "none"});
+        if(window.innerWidth <= 768) {
+            //console.log('window.innerWidth');
+            $('ul.nav-list').css({"display": "none"});
+            //hides nav list when link is clicked
+            $('.nav-open').css("display", "none");
+        }
+
 
         //hides nav list when link is clicked
-        $('.nav-open').css("display", "none");
+        //$('.nav-open').css("display", "none");
     });
 
 //TODO Add script that hides nav when scrolled down and shows it back when

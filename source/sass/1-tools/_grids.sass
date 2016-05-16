@@ -19,6 +19,7 @@
   //word-wrap: break-word
   lost-align: middle
   text-align: center
+  lost-center: flex
   vertical-align: middle
   display: flex
   flex-direction: row
@@ -54,10 +55,9 @@
 
   //centers elements - similar to container
   //lost-center: 980px
-  color: white
+  //color: white
   text-align: center
   vertical-align: center
-  //lost-align: center
   //padding: fluidize(20px, 960px)
   @media screen and (max-width: $m-screen)
     lost-center: $m-screen
@@ -78,6 +78,11 @@
     //padding: fluidize(20px, 960px) 10px
     lost-column: 1/2
     lost-utility: clearfix
+    // centers x and y elements in the grid
+    margin: auto 0px
+    padding: 20px 0px
+
+
     @media screen and (min-width: 120px) and (max-width: 300px)
       lost-column: 1/3
 
@@ -87,6 +92,7 @@
 
     @media screen and (max-width: $m-screen)
       lost-column: 1/1
+      padding: 0px
 
 // ********** HORIZONTAL GRID SYSTEM FOR TEXT & TYPOGRAPHY ********** //
 // Initialize Rhythm grid system
