@@ -13,7 +13,7 @@ css_dir = "build/assets/css"
 images_dir = "source/assets/img"
 fonts_dir = "build/assets/fonts"
 javascript_dir = "build/assets/js"
-line_comments = true
+line_comments = false
 
 preferred_syntax = :sass
 # Command to manually convert scss to sass
@@ -21,7 +21,7 @@ preferred_syntax = :sass
 
 
 # Options ca be the following expanded or nested or compact or compressed
-output_style = :expanded
+output_style = :compressed
 
 # To enable relative paths to assets via compass helper functions. Uncomment:
 relative_assets = true
