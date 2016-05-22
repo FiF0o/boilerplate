@@ -47,3 +47,4 @@ import Nav from './nav';
 // * Debug * //
 //var aaecdewee = new Abecdewee();
 //console.log(aaecdewee);
+import Buttons from './buttons';
