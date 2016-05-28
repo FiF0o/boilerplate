@@ -54,14 +54,14 @@
 //@import '3-modules/example-module-name-lockup'
 //@import '3-modules/example-fork-tag'
 //@import '3-modules/example-flex-video'
-@import '3-modules/header'
+//@import '3-modules/header'
 @import '3-modules/main-section'
 @import '3-modules/page-section'
 @import '3-modules/footer-section'
 
 // -4- ****** Sass at a page level - css for specific pages ****** //
 //@import '4-pages/example-page-home'
-@import '4-pages/homepage'
+//@import '4-pages/homepage'
 
 // -5- ****** Custom imports - asynchronous tasks in Gulp ****** //
 @import '5-custom/fonticon'
@@ -136,4 +136,25 @@ $color-listing: zip($color-mono-list, $color-mono-name)
 //h1
 //  color: black
 
+//.large-grid
+//  lost-utility: debug
+//  lost-column: 1/4
+//  //lost-utility: clearfix
+//  // centers x and y elements in the grid
+//  margin: auto 1em
+//  padding: 2em 1em
+//  @media screen and (min-width: $l-screen) and (max-width: $xl-screen)
+//    //lost-column: 1/4
+//    lost-utility: debug
+//    lost-column: 1/6
+//    //lost-utility: clearfix
+//    // centers x and y elements in the grid
+//    margin: auto 1em
+//    padding: 2em 1em
 
+footer
+  p.disclaimer
+    padding-top: 3em
+    color: lighten($complimentary2, 10%)
+    font-size: .8em
+    font-style: italic

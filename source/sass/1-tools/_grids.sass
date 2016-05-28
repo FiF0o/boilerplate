@@ -64,6 +64,16 @@
   @media screen and (max-width: $m-screen)
     lost-center: $m-screen
 
+  //&.large-grid
+  //  lost-utility: debug
+  //  lost-column: 1/4
+  //  //lost-utility: clearfix
+  //  // centers x and y elements in the grid
+  //  margin: auto 1em
+  //  padding: 2em 1em
+  //  @media screen and (min-width: $l-screen) and (max-width: $xl-screen)
+  //    //lost-column: 1/4
+
   .vertical-grid-item-4
     lost-column: 1/4
 
@@ -95,6 +105,13 @@
     @media screen and (max-width: $l-screen)
       lost-column: 1/1
       padding: 0px
+
+    @media screen and (min-width: $xl-screen)
+      lost-row: 1/1
+      //lost-utility: clearfix
+      // centers x and y elements in the grid
+      margin: auto 2em
+      padding: 4em 2em
 
 // ********** HORIZONTAL GRID SYSTEM FOR TEXT & TYPOGRAPHY ********** //
 // Initialize Rhythm grid system

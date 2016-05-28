@@ -256,7 +256,7 @@ gulp.task('image', function () {
           },
           {
             // Compress, strip metadata, and rename original image
-            rename: { suffix: '-original' }
+            rename: { suffix: '-1320px' }
           }]
 
         // Resize all PNG images to be retina ready
