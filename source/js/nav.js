@@ -1,7 +1,17 @@
 /**
  * Created by jonlazarini on 12/04/16.
  */
-import $ from '../vendors/jquery/dist/jquery.js';
+var $ = window.jQuery = window.$ = require('../vendors/jquery/dist/jquery.js');
+var velocity = require('../vendors/velocity/velocity');
+
+//console.log('window.jQuery');
+//console.log(window.jQuery);
+//
+//console.log('$');
+//console.log($);
+//
+//console.log('velocity');
+//console.log(velocity);
 
 
 module.exports = function () {
@@ -33,6 +43,14 @@ module.exports = function () {
         }
     });
 
+
+    //$('a').click(function() {
+    //    console.log('sec-section');
+    //    $('.secondary-section').velocity("slideDown", { duration: 1500 })
+    //        .velocity("slideUp", { delay: 500, duration: 1500 });
+    //
+    //});
+
 // ****** HIDES MOBILE NAV WHEN SCROLLING ****** //
 //TODO add animation slide effect when scrolling - manually add a class with
 // animation...
@@ -41,11 +59,19 @@ module.exports = function () {
 
     $(window).scroll(function (event) {
         var st = $(this).scrollTop();
-        if (st > lastScrollTop && st) {
-            //console.log('scroll down');
-            dh.slideUp(500)
-        } else {
-            dh.slideDown(500)
+        //console.log('lastscroll');
+        //console.log(lastScrollTop);
+        //console.log('scrolltop');
+        //console.log(st);
+
+        if (st > (lastScrollTop && st + 50)) {
+            //dh.slideUp(500)
+            //dh.velocity("slideUp", {duration: 500})
+        }
+        else {
+            //dh.slideDown(500)
+            //dh.velocity("reverse", {duration: 250})
+
         }
         lastScrollTop = st
     });
