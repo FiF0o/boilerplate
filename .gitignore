@@ -89,8 +89,9 @@ source/vendors/
 # Misc #
 images_for_website
 ga.txt
-~$contacts.xlsx
-contacts.xlsx
+source/~$contacts.xlsx
+source/contacts.xlsx
+feedback-sylvain
 
 
 # Vendors #

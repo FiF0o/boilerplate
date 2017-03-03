@@ -35,9 +35,11 @@ div.logo
 
 
   ul.nav-list
+    line-height: 70px
     //margin-right: calc-em(20px, 400px)
     // appends nav-open class to the nav list to make it visible when clicked
-
+    @media screen and (max-width: $m-screen)
+      line-height: 30px
     @media screen and (max-width: $s-screen)
       width: 100%
       text-align: center

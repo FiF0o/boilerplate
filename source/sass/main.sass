@@ -65,6 +65,7 @@
 
 // -5- ****** Custom imports - asynchronous tasks in Gulp ****** //
 @import '5-custom/fonticon'
+@import 'screen'
 
 //@import '1-tools/print'
 //
@@ -158,3 +159,12 @@ footer
     color: lighten($complimentary2, 10%)
     font-size: .7em
     font-style: italic
+
+.nav-list
+  line-height: 70px
+  @media screen and (min-width: $xxs-screen) and (max-width: $m-screen)
+    line-height: 40px
+
+div.logo
+  max-width: 88px
+  max-height: 88px

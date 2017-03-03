@@ -64,12 +64,12 @@ module.exports = function () {
         //console.log('scrolltop');
         //console.log(st);
 
-        if (st > (lastScrollTop && st + 50)) {
-            //dh.slideUp(500)
+        if (st > lastScrollTop && st) {
+            dh.slideUp(500)
             //dh.velocity("slideUp", {duration: 500})
         }
         else {
-            //dh.slideDown(500)
+            dh.slideDown(500)
             //dh.velocity("reverse", {duration: 250})
 
         }

@@ -4,4 +4,43 @@
   Import this file using the following HTML or equivalent:
   <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" />
 
-@import compass/reset
+@import compass/utilities/general/clearfix
+
+@media print
+  //@import compass/reset
+  .header
+    display: none
+  h2
+    page-break-before: always
+
+  h3, h4
+    page-break-after: avoid
+
+  pre, blockquote
+    page-break-inside: avoid
+
+  .vertical-grid-item-2
+    p.leading-section
+      display: block
+      width: 100%
+      +clearfix
+    .image-container
+      display: block
+      width: 100%
+      +clearfix
+
+    h3
+      page-break-before: always
+
+    &:nth-child(even)
+      //page-break-before: always
+
+  @page
+    size: auto   /* auto is the initial value */
+    /* this affects the margin in the printer settings */
+    margin: 25mm 25mm 25mm 25mm
+
+
+  body
+    /* this affects the margin on the content before sending to printer */
+    margin: 0px

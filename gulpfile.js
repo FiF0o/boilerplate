@@ -102,8 +102,8 @@
 
         },
         open: config.syncOptions.open || false,
-        notify: config.syncOptions.notify || true
-        //port: process.env.PORT || 3000
+        notify: config.syncOptions.notify || true,
+        port: process.env.PORT || 3000
         //logFileChanges: false
       },
       jadeOptions = {
@@ -493,7 +493,7 @@ gulp.task('image', function () {
   // Build Task
 // TODO include sassLint task
 // TODO Once Browserify is hooked up remove vendors tasks which will be obsolete
-  gulp.task('build', ['clean', 'jade', 'compass', 'babel', 'iconfont', 'favicon', 'build:images', 'watch']);
+  gulp.task('build', ['clean', 'jade', 'compass', 'babel', 'iconfont', 'favicon', 'build:images']);
 
   // Watch Task
   // Task dependancy, watch is run when browsersync is finished ['browsersync']
