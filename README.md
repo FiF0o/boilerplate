@@ -6,9 +6,9 @@ live-reload opens on port `:63342`.</br>
 serving static assets from `./build` on port `:3000`.</br>
 
 ## Scripts
-get task manager command lists: `gulp help`.
-`gulp start` to build the static assets and develop.
-`gulp build` to generate static assets.
+get task manager command lists: `gulp help`.</br>
+`gulp start` to build the static assets and develop.</br>
+`gulp build` to generate static assets.</br>
 
 ## Improvements
 - Print version
