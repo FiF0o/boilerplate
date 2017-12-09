@@ -75,6 +75,7 @@ Thumbs.db
 ###########
 
 .idea/
+.history/
 
 # Cache #
 .sass-cache/

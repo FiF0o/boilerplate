@@ -3,7 +3,9 @@
   "version": "1.0.0",
   "description": "Simple structure for a simple start to a simple site.",
   "main": "build/index.html",
+  "homepage": "https://fif0o.github.io/boilerplate/build",
   "scripts": {
+    "deploy": "gulp build && ./node_modules/.bin/gh-pages -d build",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
@@ -24,6 +26,7 @@
     "browser-sync": "^2.7.11",
     "browserify": "^13.0.0",
     "del": "^1.2.0",
+    "gh-pages": "1.1.0",
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
     "gulp-compass": "^2.1.0",
