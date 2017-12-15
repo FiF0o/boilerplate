@@ -7,8 +7,8 @@
   "scripts": {
     "deploy": "gulp build && ./node_modules/.bin/gh-pages -d build",
     "build": "rm -rf build/ && ./node_modules/.bin/gulp build && cp -r ./source/pdf build/",
-    "preinstall": "echo '...installing bower deps' && bower install && echo '...bower deps install done!'",
-    "postinstall": "mkdir build/",
+    "postinstall": "echo '...installing bower deps' && bower install && echo '...bower deps install done!'",
+    "preinstall": "mkdir build/",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [
