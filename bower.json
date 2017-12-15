@@ -1,5 +1,5 @@
 {
-  "name": "BoilerPlate",
+  "name": "boilerplate",
   "version": "1.0.0",
   "authors": [
     "Jon Laz"
@@ -27,7 +27,8 @@
   "dependencies": {
     "jquery": "~2.1.4",
     "scrollmagic": "^2.0.5",
-    "gsap": "^1.18.2"
+    "gsap": "^1.18.2",
+    "velocity": "^1.5.0"
   },
   "homepage": "https://bitbucket.org/jonlazarini/boilerplate/overview",
   "moduleType": []

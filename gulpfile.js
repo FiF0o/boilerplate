@@ -234,7 +234,7 @@ log(pkg.name + ' ' + pkg.version + ' ' + config.environment + ' build');
 
 // *****************
 
-gulp.task('image', function () {
+gulp.task('image', ['clean'], function () {
   return gulp.src(images.in + '/*.{jpg,jpeg,png}')
       .pipe(responsive({
         // Resize all JPG images to three different sizes: 200, 500, and 630 pixels
