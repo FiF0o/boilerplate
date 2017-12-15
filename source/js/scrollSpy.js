@@ -6,7 +6,7 @@ import TweenMax from '../vendors/gsap/src/uncompressed/TweenMax.js';
 import ScrollMagic from '../vendors/scrollmagic/scrollmagic/uncompressed/ScrollMagic.js';
 //Can't pass pluggins when there is many dots in the filename e.g. jquery.gsap.js
 //import Animation from '../vendors/scrollmagic/scrollmagic/uncompressed/plugins/jquery.gsap.js';
-import ScrollToPlugin from '../vendors/gsap/src/uncompressed/plugins/ScrollToPlugin.js';
+import ScrollToPlugin from './ScrollToPlugin.js';
 
 // Init controller
 var controller = new ScrollMagic.Controller();
