@@ -8,8 +8,10 @@
     "deploy": "gulp build && ./node_modules/.bin/gh-pages -d build",
     "build": "rm -rf build/ && ./node_modules/.bin/gulp build && cp -r ./source/pdf build/",
     "postinstall": "echo '...installing bower deps' && bower install && echo '...bower deps install done!'",
-    "preinstall": "mkdir build/",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "preinstall": "mkdir build/ && echo 'starting ruby deps installation...' && npm run deps:ruby && echo 'ruby deps install finished...'",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "//": "get a docker container to do it....",
+    "deps:ruby": "gem install bundler && bundle install"
   },
   "keywords": [
     "boilerplate",
