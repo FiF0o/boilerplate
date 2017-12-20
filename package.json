@@ -5,13 +5,15 @@
   "main": "build/index.html",
   "homepage": "https://fif0o.github.io/boilerplate/build",
   "scripts": {
+    "start": "./node_modules/.bin/gulp start",
     "deploy": "gulp build && ./node_modules/.bin/gh-pages -d build",
     "build": "rm -rf build/ && ./node_modules/.bin/gulp build && cp -r ./source/pdf build/",
     "postinstall": "echo '...installing bower deps' && bower install && echo '...bower deps install done!'",
     "preinstall": "mkdir build/ && echo 'starting ruby deps installation...' && npm run deps:ruby && echo 'ruby deps install finished...'",
     "test": "echo \"Error: no test specified\" && exit 1",
     "//": "get a docker container to do it....",
-    "deps:ruby": "gem install bundler && bundle install"
+    "deps:ruby": "gem install bundler && bundle install",
+    "run:container": "docker run -p 4000:4000 boilerplate/website:latest"
   },
   "keywords": [
     "boilerplate",
@@ -51,6 +53,7 @@
     "gulp-postcss": "^6.0.1",
     "gulp-preprocess": "^1.2.0",
     "gulp-rename": "^1.2.2",
+    "gulp-responsive": "^2.8.0",
     "gulp-sass": "^2.2.0",
     "gulp-size": "^1.2.1",
     "gulp-sourcemaps": "^1.6.0",
@@ -88,7 +91,6 @@
     "gulp-pleeease": "^1.2.0",
     "gulp-plumber": "^1.0.1",
     "gulp-preprocess": "^1.2.0",
-    "gulp-responsive": "^2.8.0",
     "gulp-sass": "^2.0.4",
     "gulp-sass-lint": "^1.1.1",
     "gulp-size": "^1.3.0",

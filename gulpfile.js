@@ -103,7 +103,7 @@
         },
         open: config.syncOptions.open || false,
         notify: config.syncOptions.notify || true,
-        port: process.env.PORT || 3000
+        port: process.env.PORT || 4000
         //logFileChanges: false
       },
       jadeOptions = {
